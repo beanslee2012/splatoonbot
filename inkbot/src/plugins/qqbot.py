@@ -1,13 +1,17 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# @Time    : 2021-09-12
+# @Author  : beanslee(疾风)
+# @FileName: qqbot.py
+# @purpose: splatoon qq bot
+# @qq group id   ：929116038
+
 import json
 import requests
 import datetime
 from datetime import datetime, timedelta
 import random
 import time
-import traceback
-import asyncio
-import sys
-import os
 import uuid
 import PIL.Image
 import PIL.ImageFont
