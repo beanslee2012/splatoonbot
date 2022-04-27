@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-09-12
 # @Author  : beanslee(疾风)
-# @FileName: qqbot.py
+# @FileName: inkbot.py
 # @purpose: splatoon qq bot
 # @qq group id   ：929116038
 
