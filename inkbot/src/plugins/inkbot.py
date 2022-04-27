@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time    : 2021-09-12
 # @Author  : beanslee(疾风)
-# @FileName: inkbot.py
+# @FileName: qqbot.py
 # @purpose: splatoon qq bot
 # @qq group id   ：929116038
 
@@ -221,8 +221,10 @@ async def stage_handle(bot: Bot, event: Event,state: T_State):
     draw.text((30,170), GameModeS, (255, 255, 255), font=font)
     draw.text((30,310), GameModeL, (255, 255, 255), font=font)
     base_img=base_img.resize((int(base_img.size[0]*0.8), int(base_img.size[1]*0.8)),PIL.Image.ANTIALIAS)
-    tmp_file = tmp_path+uuid.uuid4().hex+'.png'
-    base_img.save(tmp_file,quality =80,subsampling = 0) 
+    tmp_file = tmp_path+uuid.uuid4().hex+'.jpg'
+    rgb_img = base_img.convert('RGB')
+    rgb_img.save(tmp_file,compress_level=9)
+    #base_img.save(tmp_file,quality =60,subsampling = 0) 
     endtime = datetime.now()
     #print('2:',(endtime-starttime).seconds)
     starttime = endtime
@@ -379,9 +381,9 @@ async def coop_handle(bot: Bot, event: Event,state: T_State):
         #base_yy=int(tmp_img.size[1]*0.7)+base_sep+base_yy
     base_img = base_img.crop((0,0,base_img.size[0]-60,base_img.size[1])) #	
     base_img = circle_corner(base_img, radii)
-    tmp_file = tmp_path+uuid.uuid4().hex+'.png'
+    tmp_file = tmp_path+uuid.uuid4().hex+'.jpg'
     
-    base_img.save(tmp_file,quality =80,subsampling = 0) 
+    base_img.save(tmp_file,quality =60,subsampling = 0) 
     #imgs = f"[CQ:image,file={img_to_b64(base_img)}]"
 
     #
@@ -481,11 +483,12 @@ async def rand_handle(bot: Bot, event: Event,state: T_State):
   draw.rectangle(((30, 6),(410, 200)), fill=None, outline='white', width=5)  
   draw.rectangle(((30, 250),(210, 790)), fill=None, outline='red', width=5)  
   draw.rectangle(((230, 250),(410, 790)), fill=None, outline='green', width=5)  
-  tmp_file = tmp_path+uuid.uuid4().hex+'.png'
+  tmp_file = tmp_path+uuid.uuid4().hex+'.jpg'
   w, h = base_img.size
   base_img = base_img.resize((int(w*0.8), int(h*0.8)))
-  base_img.save(tmp_file) 
- 
+  rgb_img = base_img.convert('RGB')
+  rgb_img.save(tmp_file,compress_level=9) 
+  #base_img.save(tmp_file 
   
   msg = at_+"\n序号:"+str(counters)+'  模式：'+gamemode +'\n地图:'+stage[mapid]['name']+'\n' 
   msg = Message(msg)
