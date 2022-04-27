@@ -186,7 +186,7 @@ weapons={"0":{"en":"Sploosh-o-matic","cn":"喇叭枪","image":"weapons/Wst_Shoot
 "6012":{"en":"Tenta Camo Brella","cn":"重伞(贴牌)","image":"weapons/Umbrella_Wide_02.png","sub_name":"陷阱","speical_name":"大锤"},
 "6020":{"en":"Undercover Brella","cn":"间谍伞","image":"weapons/Wst_Umbrella_Compact_00.png","sub_name":"陷阱","speical_name":"捶地"},
 "6021":{"en":"Undercover Sorella Brella","cn":"间谍伞(贴牌)","image":"weapons/Wst_Umbrella_Compact_01.png","sub_name":"三角雷","speical_name":"仓鼠球"},
-"6022":{"en":"Kensa Undercover Brella","cn":"间谍伞(贴牌)","image":"weapons/Wst_Umbrella_Compact_01.png","sub_name":"鱼雷","speical_name":"墨甲"},
+"6022":{"en":"Kensa Undercover Brella","cn":"间谍伞(贴牌)","image":"weapons/Wst_Umbrella_Compact_02.png","sub_name":"鱼雷","speical_name":"墨甲"},
 "-1":{"en":"random","cn":"随机","image":"weapons/run/S2_Weapon_Main_Random.png"},
 "-2":{"en":"random","cn":"随机","image":"weapons/run/S2_Weapon_Main_Random_2.png"},
 "-3":{"en":"random","cn":"随机熊武器","image":"weapons/run/S2_Weapon_Main_Random_2.png"},
