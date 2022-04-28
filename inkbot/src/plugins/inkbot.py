@@ -382,8 +382,9 @@ async def coop_handle(bot: Bot, event: Event,state: T_State):
     base_img = base_img.crop((0,0,base_img.size[0]-60,base_img.size[1])) #	
     base_img = circle_corner(base_img, radii)
     tmp_file = tmp_path+uuid.uuid4().hex+'.jpg'
-    
-    base_img.save(tmp_file,quality =60,subsampling = 0) 
+    rgb_img = base_img.convert('RGB')
+    rgb_img.save(tmp_file,compress_level=9)
+    #base_img.save(tmp_file,quality =60,subsampling = 0) 
     #imgs = f"[CQ:image,file={img_to_b64(base_img)}]"
 
     #
