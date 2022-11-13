@@ -2,6 +2,10 @@
 # -*- coding: utf-8 -*-
 import sys
 #sys.setdefaultencoding('utf-8')
+
+#friend_list = [424374030,2763844098,645642]
+friend_list = [645642,1050725160, 641569063,731015337,291611226,624006585,1792404681,1530669363,741853137,87606250,913228762,1025943438,1723364,469862870,526674852,657437047,864829711,891997651,1374157631]
+
 game_types={
 '蛤蜊':'24px-Mode_Icon_Clam_Blitz.png',
 '鱼':'24px-Mode_Icon_Rainmaker.png',
@@ -38,6 +42,26 @@ stage = {"0":{"image":"stage/300px-S2_Stage_The_Reef.png","name":"寿司街"},
 "Lost Outpost":{"image":"stage/run/200px-S2_Stage_Lost_Outpost.png","name":"集落"},
 "Ruins of Ark Polaris":{"image":"stage/run/200px-S2_Ruins_of_Ark_Polaris_Promo_Image1.jpg","name":"方舟"}
         }
+
+
+stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorge","cname":"温泉花大峡谷"},
+"2":{"image":"stage/3/300px-S3_promo_screenshot_Eeltail_Alley_00.jpg","name":"Eeltail Alley","cname":"鳗鲶区"},
+"3":{"image":"stage/3/300px-S3HagglefishMarketIcon.webp.png","name":"Hagglefish Market","cname":"煙管魚市場"},
+"4":{"image":"stage/3/300px-S3UndertowSpillwayIcon.webp.png","name":"Undertow Spillway","cname":"竹蛏疏洪道"},
+"6":{"image":"stage/3/300px-S3MincemeatMetalworksIcon.webp.png","name":"Mincemeat Metalworks","cname":"鱼肉碎金属"},
+"10":{"image":"stage/3/300px-S3HammerheadBridgeIcon.jpeg","name":"Hammerhead Bridge","cname":"真鯖跨海大橋"},
+"11":{"image":"stage/3/300px-S3_Stage_Museum_d'Alfonsino_Promo_1.jpg","name":"Museum d'Alfonsino","cname":"金眼鲷美术馆"},
+"12":{"image":"stage/3/300px-S3MahiMahiResortIcon.jpeg","name":"Mahi-Mahi Resort","cname":"鬼头刀SPA度假区"},
+"13":{"image":"stage/3/300px-S3_Inkblot_Art_Academy.jpeg","name":"Inkblot Art Academy","cname":"海女美術大學"},
+"14":{"image":"stage/3/300px-S3_Sturgeon_Shipyard.jpg","name":"Sturgeon Shipyard","cname":"鲟鱼造船厂"},
+"15":{"image":"stage/3/300px-S3_Mako_Mart.jpg","name":"MakoMart","cname":"座頭購物中心"},
+"16":{"image":"stage/3/300px-S3_Wahoo_World.jpg","name":"Wahoo World","cname":"醋飯海洋世界"},
+'Sockeye Station':{"image":"stage/3/Sockeye Station.jpg","name":'新卷堡'},
+'Gone Fission Hydroplant':{"image":"stage/3/Gone Fission Hydroplant.jpg","name":'麦年海洋发电所'},
+'Spawning Grounds':{"image":"stage/3/Spawning Grounds.jpg","name":'鲑坝'}}		  
+			 
+ 
+
 
 rank_mode = {"clam_blitz":"蛤蜊","rainmaker" :"抢鱼","tower_control": "推塔","splat_zones": "区域"}
 fest_ranks = {
@@ -195,6 +219,66 @@ weapons={"0":{"en":"Sploosh-o-matic","cn":"喇叭枪","image":"weapons/Wst_Shoot
 "-6":{"en":"random","cn":"熊狙","image":"weapons/run/64px-S2_Weapon_Main_Grizzco_Charger.png"},
 "-3":{"en":"random","cn":"熊桶","image":"weapons/run/64px-S2_Weapon_Main_Grizzco_Slosher.png"}
 }							
+
+weapons3 = {
+'Sploosh-o-matic':{'wimg':'3/Path_Wst_Shooter_Short_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Ultra Stamp','speimg':'Wsp_SpUltraStamp00.png'},
+'Splattershot Jr.':{'wimg':'3/Path_Wst_Shooter_First_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Big Bubbler','speimg':'Wsp_SpGreatBarrier00.png'},
+'Splash-o-matic':{'wimg':'3/Path_Wst_Shooter_Precision_00.png','subname':'Burst Bomb','subimg':'Wsb_Bomb_Quick00.png','spename':'Crab Tank','speimg':'Wsp_SpChariot00.png'},
+'Aerospray MG':{'wimg':'3/Path_Wst_Shooter_Blaze_00.png','subname':'Fizzy Bomb','subimg':'Wsb_Bomb_Fizzy00.png','spename':'Reefslider','speimg':'Wsp_SpSkewer00.png'},
+'Splattershot':{'wimg':'3/Path_Wst_Shooter_Normal_00.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Trizooka','speimg':'Wsp_SpUltraShot00.png'},
+'Hero Shot Replica':{'wimg':'3/Path_Wst_Shooter_Normal_H.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Trizooka','speimg':'Wsp_SpUltraShot00.png'},
+'.52 Gal':{'wimg':'3/Path_Wst_Shooter_Gravity_00.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
+'N-ZAP \'85':{'wimg':'3/Path_Wst_Shooter_QuickMiddle_00.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Splattershot Pro':{'wimg':'3/Path_Wst_Shooter_Expert_00.png','subname':'Angle Shooter','subimg':'Wsb_LineMarker00.png','spename':'Crab Tank','speimg':'Wsp_SpChariot00.png'},
+'.96 Gal':{'wimg':'3/Path_Wst_Shooter_Heavy_00.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Jet Squelcher':{'wimg':'3/Path_Wst_Shooter_Long_00.png','subname':'Angle Shooter','subimg':'Wsb_LineMarker00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Luna Blaster':{'wimg':'3/Path_Wst_Blaster_Short_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
+'Blaster':{'wimg':'3/Path_Wst_Blaster_Middle_00.png','subname':'Autobomb','subimg':'Wsb_Bomb_Robot00.png','spename':'Big Bubbler','speimg':'Wsp_SpGreatBarrier00.png'},
+'Range Blaster':{'wimg':'3/Path_Wst_Blaster_Long_00.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Wave Breaker','speimg':'Wsp_SpShockSonar00.png'},
+'Clash Blaster':{'wimg':'3/Path_Wst_Blaster_LightShort_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Trizooka','speimg':'Wsp_SpUltraShot00.png'},
+'Rapid Blaster':{'wimg':'3/Path_Wst_Blaster_Light_00.png','subname':'Ink Mine','subimg':'Wsb_Trap00.png','spename':'Triple Inkstrike','speimg':'Wsp_SpTripleTornado00.png'},
+'Rapid Blaster Pro':{'wimg':'3/Path_Wst_Blaster_LightLong_00.png','subname':'Toxic Mist','subimg':'Wsb_PoisonMist00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'L-3 Nozzlenose':{'wimg':'3/Path_Wst_Shooter_TripleQuick_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Crab Tank','speimg':'Wsp_SpChariot00.png'},
+'H-3 Nozzlenose':{'wimg':'3/Path_Wst_Shooter_TripleMiddle_00.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Squeezer':{'wimg':'3/Path_Wst_Shooter_Flash_00.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Trizooka','speimg':'Wsp_SpUltraShot00.png'},
+'Carbon Roller':{'wimg':'3/Path_Wst_Roller_Compact_00.png','subname':'Autobomb','subimg':'Wsb_Bomb_Robot00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
+'Splat Roller':{'wimg':'3/Path_Wst_Roller_Normal_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Big Bubbler','speimg':'Wsp_SpGreatBarrier00.png'},
+'Dynamo Roller':{'wimg':'3/Path_Wst_Roller_Heavy_00.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Flingza Roller':{'wimg':'3/Path_Wst_Roller_Hunter_00.png','subname':'Ink Mine','subimg':'Wsb_Trap00.png','spename':'Tenta Missiles','speimg':'Wsp_SpMultiMissile00.png'},
+'Inkbrush':{'wimg':'3/Path_Wst_Brush_Mini_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
+'Octobrush':{'wimg':'3/Path_Wst_Brush_Normal_00.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
+'Classic Squiffer':{'wimg':'3/Path_Wst_Charger_Quick_00.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Big Bubbler','speimg':'Wsp_SpGreatBarrier00.png'},
+'Splat Charger':{'wimg':'3/Path_Wst_Charger_Normal_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Splatterscope':{'wimg':'3/Path_Wst_Charger_NormalScope_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'E-liter 4K':{'wimg':'3/Path_Wst_Charger_Long_00.png','subname':'Ink Mine','subimg':'Wsb_Trap00.png','spename':'Wave Breaker','speimg':'Wsp_SpShockSonar00.png'},
+'E-liter 4K Scope':{'wimg':'3/Path_Wst_Charger_LongScope_00.png','subname':'Ink Mine','subimg':'Wsb_Trap00.png','spename':'Wave Breaker','speimg':'Wsp_SpShockSonar00.png'},
+'Bamboozler 14 Mk I':{'wimg':'3/Path_Wst_Charger_Light_00.png','subname':'Autobomb','subimg':'Wsb_Bomb_Robot00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
+'Goo Tuber':{'wimg':'3/Path_Wst_Charger_Keeper_00.png','subname':'Torpedo','subimg':'Wsb_Bomb_Torpedo00.png','spename':'Tenta Missiles','speimg':'Wsp_SpMultiMissile00.png'},
+'Slosher':{'wimg':'3/Path_Wst_Slosher_Strong_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Triple Inkstrike','speimg':'Wsp_SpTripleTornado00.png'},
+'Tri-Slosher':{'wimg':'3/Path_Wst_Slosher_Diffusion_00.png','subname':'Toxic Mist','subimg':'Wsb_PoisonMist00.png','spename':'Inkjet','speimg':'Wsp_SpJetpack00.png'},
+'Sloshing Machine':{'wimg':'3/Path_Wst_Slosher_Launcher_00.png','subname':'Fizzy Bomb','subimg':'Wsb_Bomb_Fizzy00.png','spename':'Booyah Bomb','speimg':'Wsp_SpNiceBall00.png'},
+'Bloblobber':{'wimg':'3/Path_Wst_Slosher_Bathtub_00.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Ink Storm','speimg':'Wsp_SpInkStorm00.png'},
+'Explosher':{'wimg':'3/Path_Wst_Slosher_Washtub_00.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Ink Storm','speimg':'Wsp_SpInkStorm00.png'},
+'Mini Splatling':{'wimg':'3/Path_Wst_Spinner_Quick_00.png','subname':'Burst Bomb','subimg':'Wsb_Bomb_Quick00.png','spename':'Ultra Stamp','speimg':'Wsp_SpUltraStamp00.png'},
+'Heavy Splatling':{'wimg':'3/Path_Wst_Spinner_Standard_00.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Wave Breaker','speimg':'Wsp_SpShockSonar00.png'},
+'Hydra Splatling':{'wimg':'3/Path_Wst_Spinner_Hyper_00.png','subname':'Autobomb','subimg':'Wsb_Bomb_Robot00.png','spename':'Booyah Bomb','speimg':'Wsp_SpNiceBall00.png'},
+'Ballpoint Splatling':{'wimg':'3/Path_Wst_Spinner_Downpour_00.png','subname':'Fizzy Bomb','subimg':'Wsb_Bomb_Fizzy00.png','spename':'Inkjet','speimg':'Wsp_SpJetpack00.png'},
+'Nautilus 47':{'wimg':'3/Path_Wst_Spinner_Serein_00.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Ink Storm','speimg':'Wsp_SpInkStorm00.png'},
+'Dapple Dualies':{'wimg':'3/Path_Wst_Maneuver_Short_00.png','subname':'Squid Beakon','subimg':'Wsb_Beacon00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Splat Dualies':{'wimg':'3/Path_Wst_Maneuver_Normal_00.png','subname':'Suction Bomb','subimg':'Wsb_Bomb_Suction00.png','spename':'Crab Tank','speimg':'Wsp_SpChariot00.png'},
+'Glooga Dualies':{'wimg':'3/Path_Wst_Maneuver_Gallon_00.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Booyah Bomb','speimg':'Wsp_SpNiceBall00.png'},
+'Dualie Squelchers':{'wimg':'3/Path_Wst_Maneuver_Dual_00.png','subname':'Splat Bomb','subimg':'Wsb_Bomb_Splash00.png','spename':'Wave Breaker','speimg':'Wsp_SpShockSonar00.png'},
+'Dark Tetra Dualies':{'wimg':'3/Path_Wst_Maneuver_Stepper_00.png','subname':'Autobomb','subimg':'Wsb_Bomb_Robot00.png','spename':'Reefslider','speimg':'Wsp_SpSkewer00.png'},
+'Splat Brella':{'wimg':'3/Path_Wst_Shelter_Normal_00.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Triple Inkstrike','speimg':'Wsp_SpTripleTornado00.png'},
+'Tenta Brella':{'wimg':'3/Path_Wst_Shelter_Wide_00.png','subname':'Squid Beakon','subimg':'Wsb_Beacon00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Undercover Brella':{'wimg':'3/Path_Wst_Shelter_Compact_00.png','subname':'Ink Mine','subimg':'Wsb_Trap00.png','spename':'Reefslider','speimg':'Wsp_SpSkewer00.png'},
+'Tri-Stringer':{'wimg':'3/Path_Wst_Stringer_Normal_00.png','subname':'Toxic Mist','subimg':'Wsb_PoisonMist00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
+'REEF-LUX 450':{'wimg':'3/Path_Wst_Stringer_Short_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Tenta Missiles','speimg':'Wsp_SpMultiMissile00.png'},
+'Splatana Stamper':{'wimg':'3/Path_Wst_Saber_Normal_00.png','subname':'Burst Bomb','subimg':'Wsb_Bomb_Quick00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
+'Splatana Wiper':{'wimg':'3/Path_Wst_Saber_Lite_00.png','subname':'Torpedo','subimg':'Wsb_Bomb_Torpedo00.png','spename':'Ultra Stamp','speimg':'Wsp_SpUltraStamp00.png'},
+'Random':{'wimg':'3/random.png','subname':'Random','subimg':'Random.png','spename':'Random','speimg':'random.png'},
+}
+
 
 subweapon_path ="subspe/"
 subweapons={
