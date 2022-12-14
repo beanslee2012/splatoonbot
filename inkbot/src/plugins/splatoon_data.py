@@ -49,6 +49,8 @@ stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorg
 "3":{"image":"stage/3/300px-S3HagglefishMarketIcon.webp.png","name":"Hagglefish Market","cname":"煙管魚市場"},
 "4":{"image":"stage/3/300px-S3UndertowSpillwayIcon.webp.png","name":"Undertow Spillway","cname":"竹蛏疏洪道"},
 "6":{"image":"stage/3/300px-S3MincemeatMetalworksIcon.webp.png","name":"Mincemeat Metalworks","cname":"鱼肉碎金属"},
+"7":{"image":"stage/3/300px-S3_Brinewater_Springs.png","name":"Brinewater Springs","cname":"臭鱼干温泉"},
+"9":{"image":"stage/3/300px-S3_Stage_Flounder_Heights.png","name":"Flounder Heights","cname":"比目鱼住宅区"},
 "10":{"image":"stage/3/300px-S3HammerheadBridgeIcon.jpeg","name":"Hammerhead Bridge","cname":"真鯖跨海大橋"},
 "11":{"image":"stage/3/300px-S3_Stage_Museum_d'Alfonsino_Promo_1.jpg","name":"Museum d'Alfonsino","cname":"金眼鲷美术馆"},
 "12":{"image":"stage/3/300px-S3MahiMahiResortIcon.jpeg","name":"Mahi-Mahi Resort","cname":"鬼头刀SPA度假区"},
@@ -58,10 +60,8 @@ stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorg
 "16":{"image":"stage/3/300px-S3_Wahoo_World.jpg","name":"Wahoo World","cname":"醋飯海洋世界"},
 'Sockeye Station':{"image":"stage/3/Sockeye Station.jpg","name":'新卷堡'},
 'Gone Fission Hydroplant':{"image":"stage/3/Gone Fission Hydroplant.jpg","name":'麦年海洋发电所'},
-'Spawning Grounds':{"image":"stage/3/Spawning Grounds.jpg","name":'鲑坝'}}		  
-			 
- 
-
+"Marooner's Bay":{"image":"stage/3/200px-S3_Stage_Marooner's_Bay.png","name":'漂浮落难船'},
+'Spawning Grounds':{"image":"stage/3/Spawning Grounds.jpg","name":'鲑坝'}}
 
 rank_mode = {"clam_blitz":"蛤蜊","rainmaker" :"抢鱼","tower_control": "推塔","splat_zones": "区域"}
 fest_ranks = {
@@ -276,6 +276,9 @@ weapons3 = {
 'REEF-LUX 450':{'wimg':'3/Path_Wst_Stringer_Short_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Tenta Missiles','speimg':'Wsp_SpMultiMissile00.png'},
 'Splatana Stamper':{'wimg':'3/Path_Wst_Saber_Normal_00.png','subname':'Burst Bomb','subimg':'Wsb_Bomb_Quick00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
 'Splatana Wiper':{'wimg':'3/Path_Wst_Saber_Lite_00.png','subname':'Torpedo','subimg':'Wsb_Bomb_Torpedo00.png','spename':'Ultra Stamp','speimg':'Wsp_SpUltraStamp00.png'},
+'Big Swig Roller':{'wimg':'3/64px-S3_Weapon_Main_Big_Swig_Roller.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Snipewriter 5H':{'wimg':'3/64px-S3_Weapon_Main_Snipewriter_5H.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Splattershot Nova':{'wimg':'3/64px-S3_Weapon_Main_Splattershot_Nova.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
 'Random':{'wimg':'3/random.png','subname':'Random','subimg':'Random.png','spename':'Random','speimg':'random.png'},
 }
 
