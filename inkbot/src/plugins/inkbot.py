@@ -210,6 +210,18 @@ async def stage_handle(bot: Bot, event: Event,state: T_State):
             else:
                 GameModeL='\n'+GameModeL[0]
             StartTimeL, EndTimeL = StartTimeS, EndTimeS 
+            StartTimeX = str((datetime.strptime(game_file['data']['xSchedules']['nodes'][times]['startTime'],"%Y-%m-%dT%H:%M:%SZ") + timedelta(hours=8)).hour) + '时'
+            EndTimeX =   str((datetime.strptime(game_file['data']['xSchedules']['nodes'][times]['endTime'],"%Y-%m-%dT%H:%M:%SZ") + timedelta(hours=8)).hour) + '时'
+            Map1X = stage3[str(game_file['data']['xSchedules']['nodes'][times]['xMatchSetting']['vsStages'][0]['vsStageId'])]['cname']
+            Map2X = stage3[str(game_file['data']['xSchedules']['nodes'][times]['xMatchSetting']['vsStages'][1]['vsStageId'])]['cname']
+
+            GameModeX = gamemode_rule_name[ game_file['data']['xSchedules']['nodes'][times]['xMatchSetting']['vsRule']['name']]
+            GameMode = GameModeX
+            if (len(GameModeX)) == 2:
+                GameModeX=GameModeX[0]+'\n'+GameModeX[1]
+            else:
+                GameModeX='\n'+GameModeX[0]
+            StartTimeX, EndTimeX = StartTimeX, EndTimeX
         except Exception as e:
             pass
             Map1R = stage3[str(game_file['data']['festSchedules']['nodes'][times]['festMatchSetting']['vsStages'][0]['vsStageId'])]['cname']
@@ -222,7 +234,7 @@ async def stage_handle(bot: Bot, event: Event,state: T_State):
   
     global img_path
    
-    base_img = PIL.Image.open(img_path+'misc/bg.png')
+    base_img = PIL.Image.open(img_path+'misc/bg3.jpg')
     radii=20
     base_img = circle_corner(base_img, radii)
     base_sep=8
@@ -285,11 +297,21 @@ async def stage_handle(bot: Bot, event: Event,state: T_State):
             base_img=merge_image(base_img,tmp_img,base_xx_incr,int(base_yy_incr*1.5)+65,scale)
             tmp_img=PIL.Image.open(img_path+'mode/league1.png')
             base_img=merge_image(base_img,tmp_img,int(base_xx_incr)-35,int(base_yy_incr*2)+20,0.5)
+
+            #x mode
+            tmp_img = PIL.Image.open(img_path+stage3[str(game_file['data']['xSchedules']['nodes'][times]['xMatchSetting']['vsStages'][0]['vsStageId'])]['image'])
+            base_img=merge_image(base_img,tmp_img,base_xx,448,scale)
+            tmp_img = PIL.Image.open(img_path+stage3[str(game_file['data']['xSchedules']['nodes'][times]['xMatchSetting']['vsStages'][1]['vsStageId'])]['image'])
+            base_img=merge_image(base_img,tmp_img,base_xx_incr,448,scale)
+            tmp_img=PIL.Image.open(img_path+'mode/x.png')
+            base_img=merge_image(base_img,tmp_img,int(base_xx_incr)-35,490,0.5)
+            
             draw = PIL.ImageDraw.Draw(base_img)
-            font = PIL.ImageFont.truetype(img_path+"font/msyh.ttc", 45) 
+            font = PIL.ImageFont.truetype(img_path+"font/msyh.ttc", 45)
             draw.text((30,20 ), f"涂\n地", (255, 255, 255), font=font)
             draw.text((30,170), GameModeS, (255, 255, 255), font=font)
             draw.text((30,310), GameModeL, (255, 255, 255), font=font)
+            draw.text((30,460), GameModeX, (255, 255, 255), font=font)
             base_img=base_img.resize((int(base_img.size[0]*0.8), int(base_img.size[1]*0.8)),PIL.Image.ANTIALIAS)
         except Exception as e:
             tmp_img = PIL.Image.open(img_path+stage3[str(game_file['data']['festSchedules']['nodes'][times]['festMatchSetting']['vsStages'][0]['vsStageId'])]['image'])
