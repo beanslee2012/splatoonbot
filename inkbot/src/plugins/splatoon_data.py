@@ -276,9 +276,9 @@ weapons3 = {
 'REEF-LUX 450':{'wimg':'3/Path_Wst_Stringer_Short_00.png','subname':'Curling Bomb','subimg':'Wsb_Bomb_Curling00.png','spename':'Tenta Missiles','speimg':'Wsp_SpMultiMissile00.png'},
 'Splatana Stamper':{'wimg':'3/Path_Wst_Saber_Normal_00.png','subname':'Burst Bomb','subimg':'Wsb_Bomb_Quick00.png','spename':'Zipcaster','speimg':'Wsp_SpSuperHook00.png'},
 'Splatana Wiper':{'wimg':'3/Path_Wst_Saber_Lite_00.png','subname':'Torpedo','subimg':'Wsb_Bomb_Torpedo00.png','spename':'Ultra Stamp','speimg':'Wsp_SpUltraStamp00.png'},
-'Big Swig Roller':{'wimg':'3/64px-S3_Weapon_Main_Big_Swig_Roller.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
-'Snipewriter 5H':{'wimg':'3/64px-S3_Weapon_Main_Snipewriter_5H.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
-'Splattershot Nova':{'wimg':'3/64px-S3_Weapon_Main_Splattershot_Nova.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
+'Big Swig Roller':{'wimg':'3/256px-S3_Weapon_Main_Big_Swig_Roller.png','subname':'Splash Wall','subimg':'Wsb_Shield00.png','spename':'Ink Vac','speimg':'Wsp_SpBlower00.png'},
+'Snipewriter 5H':{'wimg':'3/256px-S3_Weapon_Main_Snipewriter_5H.png','subname':'Sprinkler','subimg':'Wsb_Sprinkler00.png','spename':'Tacticooler','speimg':'Wsp_SpEnergyStand00.png'},
+'Splattershot Nova':{'wimg':'3/256px-S3_Weapon_Main_Splattershot_Nova.png','subname':'Point Sensor','subimg':'Wsb_PointSensor00.png','spename':'Killer Wail 5.1','speimg':'Wsp_SpMicroLaser00.png'},
 'Random':{'wimg':'3/random.png','subname':'Random','subimg':'Random.png','spename':'Random','speimg':'random.png'},
 }
 
