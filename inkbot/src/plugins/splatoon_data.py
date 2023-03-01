@@ -58,6 +58,8 @@ stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorg
 "14":{"image":"stage/3/300px-S3_Sturgeon_Shipyard.jpg","name":"Sturgeon Shipyard","cname":"鲟鱼造船厂"},
 "15":{"image":"stage/3/300px-S3_Mako_Mart.jpg","name":"MakoMart","cname":"座頭購物中心"},
 "16":{"image":"stage/3/300px-S3_Wahoo_World.jpg","name":"Wahoo World","cname":"醋飯海洋世界"},
+"5":{"image":"stage/3/300px-S3_Stage_Um'ami_Ruins.png","name":"Um'ami Ruins","cname":"鱼露遗迹"},
+"18":{"image":"stage/3/300px-S3_Stage_Manta_Maria.png","name":"Manta Maria","cname":"鬼蝠鲼玛利亚号"},
 'Sockeye Station':{"image":"stage/3/Sockeye Station.jpg","name":'新卷堡'},
 'Gone Fission Hydroplant':{"image":"stage/3/Gone Fission Hydroplant.jpg","name":'麦年海洋发电所'},
 "Marooner's Bay":{"image":"stage/3/200px-S3_Stage_Marooner's_Bay.png","name":'漂浮落难船'},
