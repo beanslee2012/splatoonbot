@@ -48,8 +48,10 @@ stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorg
 "2":{"image":"stage/3/300px-S3_promo_screenshot_Eeltail_Alley_00.jpg","name":"Eeltail Alley","cname":"鳗鲶区"},
 "3":{"image":"stage/3/300px-S3HagglefishMarketIcon.webp.png","name":"Hagglefish Market","cname":"煙管魚市場"},
 "4":{"image":"stage/3/300px-S3UndertowSpillwayIcon.webp.png","name":"Undertow Spillway","cname":"竹蛏疏洪道"},
+"5":{"image":"stage/3/300px-S3_Stage_Um'ami_Ruins.png","name":"Um'ami Ruins","cname":"鱼露遗迹"},
 "6":{"image":"stage/3/300px-S3MincemeatMetalworksIcon.webp.png","name":"Mincemeat Metalworks","cname":"鱼肉碎金属"},
 "7":{"image":"stage/3/300px-S3_Brinewater_Springs.png","name":"Brinewater Springs","cname":"臭鱼干温泉"},
+"8":{"image":"stage/3/300px-S3_Stage_Barnacle_&_Dime.png","name":"Barnacle & Dime","cname":"塔拉波特购物公园"},
 "9":{"image":"stage/3/300px-S3_Stage_Flounder_Heights.png","name":"Flounder Heights","cname":"比目鱼住宅区"},
 "10":{"image":"stage/3/300px-S3HammerheadBridgeIcon.jpeg","name":"Hammerhead Bridge","cname":"真鯖跨海大橋"},
 "11":{"image":"stage/3/300px-S3_Stage_Museum_d'Alfonsino_Promo_1.jpg","name":"Museum d'Alfonsino","cname":"金眼鲷美术馆"},
@@ -58,12 +60,14 @@ stage3 ={"1":{"image":"stage/3/300px-Scorch_Gorge_Promo.jpg","name":"Scorch Gorg
 "14":{"image":"stage/3/300px-S3_Sturgeon_Shipyard.jpg","name":"Sturgeon Shipyard","cname":"鲟鱼造船厂"},
 "15":{"image":"stage/3/300px-S3_Mako_Mart.jpg","name":"MakoMart","cname":"座頭購物中心"},
 "16":{"image":"stage/3/300px-S3_Wahoo_World.jpg","name":"Wahoo World","cname":"醋飯海洋世界"},
-"5":{"image":"stage/3/300px-S3_Stage_Um'ami_Ruins.png","name":"Um'ami Ruins","cname":"鱼露遗迹"},
+"17":{"image":"stage/3/300px-S3_Stage_Humpback_Pump_Track.png","name":"Humpback Pump Track","cname":"昆布赛道"},
 "18":{"image":"stage/3/300px-S3_Stage_Manta_Maria.png","name":"Manta Maria","cname":"鬼蝠鲼玛利亚号"},
+"Jammin' Salmon Junction":{"image":"stage/3/300px-S3_Stage_Jammin'_Salmon_Junction.png","name":'生筋子系统交流道遗址'},
 'Sockeye Station':{"image":"stage/3/Sockeye Station.jpg","name":'新卷堡'},
 'Gone Fission Hydroplant':{"image":"stage/3/Gone Fission Hydroplant.jpg","name":'麦年海洋发电所'},
 "Marooner's Bay":{"image":"stage/3/200px-S3_Stage_Marooner's_Bay.png","name":'漂浮落难船'},
 'Spawning Grounds':{"image":"stage/3/Spawning Grounds.jpg","name":'鲑坝'}}
+
 
 rank_mode = {"clam_blitz":"蛤蜊","rainmaker" :"抢鱼","tower_control": "推塔","splat_zones": "区域"}
 fest_ranks = {
